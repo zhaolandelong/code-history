@@ -1,6 +1,6 @@
-import { strReverse } from '@util';
+import { strReverse } from 'util';
+import logo from 'assets/logo.jpg';
 import './index.less';
-import logo from './assets/logo.jpg';
 
 const $app = document.getElementById('app');
 

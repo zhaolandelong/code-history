@@ -1,14 +1,14 @@
-const $app = document.getElementById('app');
+import { strReverse } from '@util';
+import './index.less';
+import logo from './assets/logo.jpg';
 
-function strReverse(str) {
-  return str.split('').reverse().join('');
-}
+const $app = document.getElementById('app');
 
 const strInput = 'Hello World';
 const srtHolder = 'The result will be here...';
 const strHtml = `
-<img src="./src/assets/logo.jpg" alt="logo" />
-<h1>${strInput}</h1>
+<img src="${logo}" alt="logo" />  
+<h1>${strInput}</h1>  
 <button id="do">Show the reverse of "${strInput}"</button>
 <button id="reset">Do reset</button>
 <p id="result">${srtHolder}</p>

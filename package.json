@@ -1,0 +1,12 @@
+{
+  "name": "code-history",
+  "version": "1.0.0",
+  "description": "Use to show the change of code in blog!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "zhaolandelong@163.com",
+  "license": "ISC"
+}

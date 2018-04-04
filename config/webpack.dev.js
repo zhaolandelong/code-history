@@ -24,6 +24,8 @@ module.exports = webpackMerge(baseConfig, {
     contentBase: path.resolve(root, 'dist'),
     port: 9000,
     hot: true,
+    open: true,
+    proxy: {}
   },
   plugins: [
     new webpack.NamedModulesPlugin(),

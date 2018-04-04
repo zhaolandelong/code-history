@@ -50,4 +50,8 @@ module.exports = {
       components: path.resolve(root, 'src/components'),
     },
   },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  },
 };

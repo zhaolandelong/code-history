@@ -4,8 +4,12 @@
   "description": "Use to show the change of code in blog!",
   "main": "index.js",
   "scripts": {
+    "test": "jest --config config/jest.config.js",
     "prod": "webpack --config config/webpack.prod.js",
-    "dev": "webpack-dev-server --config config/webpack.dev.js --open"
+    "dev": "webpack-dev-server --inline --config config/webpack.dev.js",
+    "start": "npm run dev",
+    "lint:fix": "node ./node_modules/eslint/bin/eslint.js src/**/*.js src/**/*.jsx --fix",
+    "lint": "node ./node_modules/eslint/bin/eslint.js src/**/*.js src/**/*.jsx"
   },
   "keywords": [],
   "author": "zhaolandelong@163.com",
@@ -44,5 +48,14 @@
   "dependencies": {
     "react": "^16.3.0",
     "react-dom": "^16.3.0"
-  }
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

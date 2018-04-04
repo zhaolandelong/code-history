@@ -1,5 +1,5 @@
 /config/  
 /dist/  
 /*.js  
-/test/**/coverage/  
-/test/**/reports/
+/test/
+/src/**/__tests__/

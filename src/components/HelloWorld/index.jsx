@@ -1,32 +1,31 @@
 import React from 'react';
-import { strReverse } from 'util';
+import { formatDate } from 'util/index';
 import logo from 'assets/logo.jpg';
-
-const STR_INPUT = 'Hello World';
-const STR_HOLDER = 'The result will be here...';
+import './index.less';
 
 export default class HelloWorld extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      result: STR_HOLDER,
+      txt: '',
     };
   }
 
-  onChangeResult(result) {
+  onShowTxt() {
     this.setState({
-      result,
+      txt: 'Hello World',
     });
   }
 
   render() {
     return (
-      <div>
+      <div className="hlwd">
         <img src={logo} alt="logo" />
-        <h1>{STR_INPUT}</h1>
-        <button onClick={() => this.onChangeResult(strReverse(STR_INPUT))}>{`Show the reverse of "${STR_INPUT}"`}</button>
-        <button onClick={() => this.onChangeResult(STR_HOLDER)}>Do reset</button>
-        <p>{this.state.result}</p>
+        <p className="hlwd-note">When you click the btn, the time will change!</p>
+        <p>Because function render will be called.Think it deeply to understand it!</p>
+        <h1>{formatDate(new Date())}</h1>
+        <button onClick={() => this.onShowTxt()}>Show Hello World</button>
+        <p>{this.state.txt}</p>
       </div>);
   }
 }

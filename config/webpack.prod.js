@@ -24,9 +24,9 @@ module.exports = webpackMerge(baseConfig, {
               minimize: true,
             },
           }, 'postcss-loader', 'less-loader'],
-        })
-      }
-    ]
+        }),
+      },
+    ],
   },
   devtool: '#source-map',
   plugins: [

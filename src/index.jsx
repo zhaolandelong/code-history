@@ -5,5 +5,5 @@ import './index.less';
 
 ReactDOM.render(
   <HelloWorld />,
-  document.getElementById('app')
+  document.getElementById('app'),
 );

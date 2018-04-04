@@ -10,7 +10,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: 'babel-loader',
+        use: ['babel-loader', 'eslint-loader'],
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -44,10 +44,10 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
-      'src': path.resolve(root, 'src'),
-      'util': path.resolve(root, 'src/util'),
-      'assets': path.resolve(root, 'src/assets'),
-      'components': path.resolve(root, 'src/components')
+      src: path.resolve(root, 'src'),
+      util: path.resolve(root, 'src/util'),
+      assets: path.resolve(root, 'src/assets'),
+      components: path.resolve(root, 'src/components'),
     },
   },
 };

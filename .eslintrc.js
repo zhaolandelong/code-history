@@ -26,6 +26,8 @@ module.exports = {
     }
   },
   rules: {
-    'max-len': 0
+    'max-len': 0,
+    'jsx-a11y/anchor-is-valid': [ 'error', {'components': []}], // react-router <Link />
+    'react/prop-types': ['error', { ignore: ['match']}] // react-router props.match
   }
 } 

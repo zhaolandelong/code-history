@@ -8,7 +8,7 @@
     "prod": "webpack --config config/webpack.prod.js",
     "dev": "webpack-dev-server --inline --config config/webpack.dev.js",
     "start": "npm run dev",
-    "lint:fix": "node ./node_modules/eslint/bin/eslint.js src/**/*.js src/**/*.jsx --fix",
+    "fix": "node ./node_modules/eslint/bin/eslint.js src/**/*.js src/**/*.jsx --fix",
     "lint": "node ./node_modules/eslint/bin/eslint.js src/**/*.js src/**/*.jsx"
   },
   "keywords": [],
@@ -47,7 +47,8 @@
   },
   "dependencies": {
     "react": "^16.3.0",
-    "react-dom": "^16.3.0"
+    "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2"
   },
   "engines": {
     "node": ">= 6.0.0",
